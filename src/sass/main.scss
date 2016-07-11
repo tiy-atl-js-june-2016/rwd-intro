@@ -1,0 +1,43 @@
+@import "bulma";
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 0 25px;
+  color: white;
+  font-size:2em; //20px
+
+  .box-left {
+    background-color: red;
+  }
+
+  .box-right {
+    background-color: blue;
+    font-size: 2em; // 40px
+  }
+
+}
+
+
+@media screen and (min-width: 500px) {
+  .box-left {
+    float: left;
+    width: 25%;
+  }
+  .box-right {
+    float: left;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html { font-size: 50%; }
+}
